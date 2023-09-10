@@ -53,7 +53,7 @@ def coreml(ts_model, img, weigths_path, int8=False, fp16=False):
         print('CoreML export failure: %s' % e)
 
 
-def torchscript_lite(model, img, weigths_path)
+def torchscript_lite(model, img, weigths_path):
     try:
         print('\nStarting TorchScript-Lite export with torch %s...' % torch.__version__)
         f = weights_path.replace('.pt', '.torchscript.ptl')  # filename
@@ -65,7 +65,7 @@ def torchscript_lite(model, img, weigths_path)
         print('TorchScript-Lite export failure: %s' % e)
 
 
-def onnx_export(model, output, opt)
+def onnx_export(model, output, opt):
     try:
         import onnx
 
